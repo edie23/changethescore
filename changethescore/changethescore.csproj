@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA4D45C8-09DF-47FA-879D-CABED7BC1C58}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>changethescore</RootNamespace>
+    <AssemblyName>工具</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>D:\My Documents\新建文件夹\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>back.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>changethescore.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>E:\My Documents\导数据\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="asstChangeClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="asstChangeClass.Designer.cs">
+      <DependentUpon>asstChangeClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="asstInstore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="asstInstore.Designer.cs">
+      <DependentUpon>asstInstore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changeFileName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changeFileName.Designer.cs">
+      <DependentUpon>changeFileName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clExcelReadAndWrite.cs" />
+    <Compile Include="dataCheckAndTr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dataCheckAndTr.Designer.cs">
+      <DependentUpon>dataCheckAndTr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Db.cs" />
+    <Compile Include="dbManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbManager.Designer.cs">
+      <DependentUpon>dbManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formdiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formdiv.Designer.cs">
+      <DependentUpon>formdiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArticle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArticle.Designer.cs">
+      <DependentUpon>frmArticle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInv.Designer.cs">
+      <DependentUpon>frmInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrder.Designer.cs">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPromotionReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPromotionReport.Designer.cs">
+      <DependentUpon>frmPromotionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSa_article.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSa_article.Designer.cs">
+      <DependentUpon>frmSa_article.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmscoredetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmscoredetail.Designer.cs">
+      <DependentUpon>frmscoredetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_gather.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_gather.Designer.cs">
+      <DependentUpon>f_gather.cs</DependentUpon>
+    </Compile>
+    <Compile Include="getAbb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="getAbb.Designer.cs">
+      <DependentUpon>getAbb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="getZjc.cs" />
+    <Compile Include="GridPrinter.cs" />
+    <Compile Include="leadToFarticle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leadToFarticle.Designer.cs">
+      <DependentUpon>leadToFarticle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs" />
+    <Compile Include="MyStream.cs" />
+    <Compile Include="frmForScore_ini.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForScore_ini.Designer.cs">
+      <DependentUpon>frmForScore_ini.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="promotionArticle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="promotionArticle.Designer.cs">
+      <DependentUpon>promotionArticle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reportMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportMain.Designer.cs">
+      <DependentUpon>reportMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sa_article.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sa_article.Designer.cs">
+      <DependentUpon>sa_article.cs</DependentUpon>
+    </Compile>
+    <Compile Include="score_2_steup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="score_2_steup.Designer.cs">
+      <DependentUpon>score_2_steup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="score_front.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="score_front.Designer.cs">
+      <DependentUpon>score_front.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tempClass.cs" />
+    <Compile Include="touchScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="touchScore.Designer.cs">
+      <DependentUpon>touchScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vip_limited.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vip_limited.Designer.cs">
+      <DependentUpon>vip_limited.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vip_retail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vip_retail.Designer.cs">
+      <DependentUpon>vip_retail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vip_return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vip_return.Designer.cs">
+      <DependentUpon>vip_return.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="asstChangeClass.resx">
+      <DependentUpon>asstChangeClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="asstInstore.resx">
+      <DependentUpon>asstInstore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changeFileName.resx">
+      <DependentUpon>changeFileName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dataCheckAndTr.resx">
+      <DependentUpon>dataCheckAndTr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dbManager.resx">
+      <DependentUpon>dbManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArticle.resx">
+      <DependentUpon>frmArticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForScore_ini.resx">
+      <DependentUpon>frmForScore_ini.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formdiv.resx">
+      <DependentUpon>formdiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInv.resx">
+      <DependentUpon>frmInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrder.resx">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPromotionReport.resx">
+      <DependentUpon>frmPromotionReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSa_article.resx">
+      <DependentUpon>frmSa_article.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmscoredetail.resx">
+      <DependentUpon>frmscoredetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_gather.resx">
+      <DependentUpon>f_gather.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="getAbb.resx">
+      <DependentUpon>getAbb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leadToFarticle.resx">
+      <DependentUpon>leadToFarticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="promotionArticle.resx">
+      <DependentUpon>promotionArticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="reportMain.resx">
+      <DependentUpon>reportMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sa_article.resx">
+      <DependentUpon>sa_article.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="score_2_steup.resx">
+      <DependentUpon>score_2_steup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="score_front.resx">
+      <DependentUpon>score_front.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="touchScore.resx">
+      <DependentUpon>touchScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vip_limited.resx">
+      <DependentUpon>vip_limited.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vip_retail.resx">
+      <DependentUpon>vip_retail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vip_return.resx">
+      <DependentUpon>vip_return.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="back.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
